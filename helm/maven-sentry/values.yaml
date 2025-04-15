@@ -6,4 +6,4 @@ service:
   type: ClusterIP
   port: 8080
 
-replicaCount: 1
+createNamespace: true
