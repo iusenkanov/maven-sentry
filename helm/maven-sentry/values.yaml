@@ -1,0 +1,9 @@
+image:
+  repository: ghcr.io/your-org/maven-sentry
+  tag: "latest" # gets overridden via ArgoCD or CI pipeline
+
+service:
+  type: ClusterIP
+  port: 8080
+
+replicaCount: 1
