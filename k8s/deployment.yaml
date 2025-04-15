@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: maven-sentry
+  namespace: maven-sentry
 spec:
   replicas: 1
   selector:
