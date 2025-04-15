@@ -15,20 +15,10 @@ spec:
       labels:
         app: {{ .Release.Name }}
     spec:
-      replicas: { { .Values.replicaCount } }
-      selector:
-        matchLabels:
-          app: { { .Release.Name } }
-      template:
-        metadata:
-          labels:
-            app: { { .Release.Name } }
-        spec:
-          imagePullSecrets:
-            - name: ghcr-pull-secret
-          containers:
-            - name: { { .Release.Name } }
-              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-              ports:
-                - containerPort: { { .Values.service.port } }
-
+      imagePullSecrets:
+        - name: ghcr-pull-secret
+      containers:
+        - name: {{ .Release.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: {{ .Values.service.port }}
