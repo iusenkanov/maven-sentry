@@ -1,0 +1,27 @@
+# Environment variables
+.env
+
+# Maven
+target/
+*.war
+*.ear
+*.jar
+*.class
+*.log
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
