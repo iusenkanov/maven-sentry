@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/iusenkanov/maven-sentry
-  tag: "latest"
+  tag: "sha256:4a7507e47117c0cba17250f33c2fa3007ba087c9e9905995343bea65a4649c5f"
 
 service:
   type: ClusterIP
